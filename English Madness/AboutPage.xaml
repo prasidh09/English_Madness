@@ -1,0 +1,85 @@
+﻿<UserControl
+    x:Class="English_Madness.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:English_Madness"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    
+    d:DesignWidth="363">
+
+    <Grid>
+        <Border BorderThickness="1,0,0,0" BorderBrush="Black">
+
+            <Grid VerticalAlignment="Stretch">
+            	<Grid.Background>
+            		<ImageBrush ImageSource="Assets/BackGround.jpg" Stretch="UniformToFill"/>
+            	</Grid.Background>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="140"/>
+
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+
+
+
+                <!-- HEADER -->
+
+                <Grid Grid.Row="0">
+                	<Grid.Background>
+                		<ImageBrush ImageSource="Assets/BackGround.jpg" Stretch="UniformToFill"/>
+                	</Grid.Background>
+
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="*" />
+
+                    </Grid.ColumnDefinitions>
+
+
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Margin="25,40,25,25" VerticalAlignment="Bottom">
+                        <Button x:Name="BackButton" Margin="10,0,0,0" Style="{StaticResource BackButtonStyle}" Click="BackButton_Click" VerticalAlignment="Center"/>
+                        <TextBlock Margin="25,0,0,0" FontFamily="Segoe UI" FontWeight="SemiLight" FontSize="24.6667" Text="About" Foreground="Black" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Border BorderBrush="Black" BorderThickness="0,0,0,1" Margin="0"/>
+                </Grid>
+                <!-- CONTENT AREA -->
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
+                    <Grid Margin="25" VerticalAlignment="Top" Grid.RowSpan="3">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource SubheaderTextStyle}">English Madness</TextBlock>
+                            <Border BorderThickness="0,1,0,0" Padding="0" BorderBrush="Black" Margin="0,10,0,0"/>
+                            <TextBlock Margin="0,10,0,0" Style="{StaticResource CaptionTextStyle}">Developer Name : Prasidh</TextBlock>
+                            <TextBlock Margin="0,5,0,0" Style="{StaticResource CaptionTextStyle}">Version : 1.1.0</TextBlock>
+                            <TextBlock Margin="0,5,0,0" Style="{StaticResource CaptionTextStyle}">Last Updated Date : 7th April 2013</TextBlock>
+
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <Image Source="Assets/Facebook.png" Width="86" Height="86" Tapped="Image_Tapped_1"/>
+                                    <TextBlock FontFamily="Segoe UI Light" FontSize="14" VerticalAlignment="Center" FontWeight="Light" Tapped="TextBlock_Tapped_1">Connect with me through facebook</TextBlock>
+
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                    
+                                    <TextBlock FontFamily="Segoe UI Light" FontSize="14" VerticalAlignment="Center" FontWeight="Light" Tapped="TextBlock_Tapped_2">Follow Updates on Twitter</TextBlock>
+                                    <Image Source="Assets/Twitter Bird.png" Width="86" Height="86" Tapped="Image_Tapped_2"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <Image Source="Assets/Mailbox.png" Width="86" Height="86" Tapped="Image_Tapped_3"/>
+                                    <TextBlock FontFamily="Segoe UI Light" FontSize="14" VerticalAlignment="Center" FontWeight="Light" Tapped="TextBlock_Tapped_3">Mail me your Reviews and Feedbacks</TextBlock>
+
+                                </StackPanel>
+                            </StackPanel>
+
+                        </StackPanel>
+                        
+                    </Grid>
+                </ScrollViewer>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
