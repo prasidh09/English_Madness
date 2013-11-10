@@ -12,4 +12,4 @@ Operating System : Windows 8
 I started developing apps for the Windows Phone platform as a hobby during my under graduation and 
 published a few apps in the marketplace. 
 
-Link : http://www.windowsphone.com/en-US/store/publishers?publisherId=prasidh41
+Link : http://www.windowsphone.com/en-IN/store/publishers?publisherId=prasidh41
