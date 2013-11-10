@@ -7,3 +7,9 @@ Download Link : http://apps.microsoft.com/windows/en-in/app/english-madness/3720
 
 Language of Implementation : XAML, C#, XML
 Operating System : Windows 8
+
+
+I started developing apps for the Windows Phone platform as a hobby during my under graduation and 
+published a few apps in the marketplace. 
+
+Link : http://www.windowsphone.com/en-us/search?q=prasidh41
